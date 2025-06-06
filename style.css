@@ -123,7 +123,7 @@ section { padding: 6rem 0; position: relative; }
 .course-list li strong { color: var(--accent-color); font-weight: 600; }
 
 /* --- Activities Section (FLIPPING CARDS) --- */
-.activities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; perspective: 1200px; }
+.activities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; perspective: 1200px; justify-items: center;}
 .activity-card-flipper { background-color: transparent; width: 100%; height: 350px; cursor: pointer; }
 .card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.8s; transform-style: preserve-3d; }
 .activity-card-flipper:hover .card-inner { transform: rotateY(180deg); }
@@ -133,9 +133,11 @@ section { padding: 6rem 0; position: relative; }
 .card-front p { font-size: 0.95rem; line-height: 1.5; color: var(--text-color); flex-grow: 1; margin-bottom: 1rem; }
 .card-date { font-size: 0.8rem; font-weight: 600; color: var(--bg-color); padding: 0.25rem 0.75rem; background: var(--accent-color); border-radius: 999px; margin-top: auto; }
 .card-back { transform: rotateY(180deg); background-size: cover; background-position: center; }
-#card-back-1 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/seed/rendezvous/300/350'); }
-#card-back-2 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/seed/edc/300/350'); }
-#card-back-3 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/seed/becon/300/350'); }
+#card-back-1 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('PORs/RDV.png'); }
+#card-back-2 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('PORs/eDC.png'); }
+#card-back-3 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('PORs/Becon.png'); }
+#card-back-4 { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('PORs/AR.png'); }
+#card-back-5{ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('PORs/ARIES.png'); }
 
 /* --- Contact Section --- */
 .contact-section { text-align: center; }
